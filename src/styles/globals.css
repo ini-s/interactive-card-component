@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.full-bleed {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .full-bleed {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 65.625em) {
+}
+
+@media screen and (min-width: 90em) {
+  .full-bleed {
+    padding-left: calc((100% - 80rem) / 2);
+    padding-right: calc((100% - 80rem) / 2);
+  }
+}

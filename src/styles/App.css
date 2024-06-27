@@ -1,0 +1,346 @@
+.card-box {
+  height: 18rem;
+  position: relative;
+}
+
+.bg-container {
+  position: relative;
+  height: 100%;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+.bg {
+  height: 100%;
+}
+
+.card {
+  height: 11.75rem;
+  position: relative;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card1 {
+  margin-left: 20%;
+}
+
+.card2 {
+  top: -5.1rem;
+  padding: 1.375rem 1.5rem;
+}
+
+.card1 > span {
+  position: absolute;
+  top: 45%;
+  right: 3rem;
+}
+
+.card2 > .text {
+  position: relative;
+  top: 3.5rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.card2 > .text > p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card2 > .text > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.875rem;
+}
+
+.card-name {
+  text-transform: uppercase;
+}
+
+.card-name,
+.exp-date {
+  font-size: 0.75rem;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.big-circle {
+  background-color: var(--color-white);
+  width: 2.23rem;
+  height: 2.23rem;
+}
+
+.small-circle {
+  border: 1px solid var(--color-white);
+  width: 0.9563rem;
+  height: 0.9563rem;
+}
+
+form {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem;
+  font-size: 0.9375rem;
+}
+
+label {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.88rem;
+  color: var(--color-very-dark-violet);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-bottom: 0.88rem;
+}
+
+label,
+legend {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8125rem;
+  border-radius: 0.4375rem;
+  border: 1px solid var(--color-light-grayish-violet);
+}
+
+.exp-date-container,
+.exp-date-container > fieldset {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.exp-date-container > fieldset label {
+  opacity: 0;
+}
+
+.exp-date-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  color: var(--color-white);
+  border: none;
+  width: 100%;
+  background-color: var(--color-very-dark-violet);
+  padding: 0.8812rem;
+  border-radius: 6px;
+  margin-top: 1.375rem;
+  font-size: 1rem;
+}
+
+.completed-state {
+  height: 21.875rem;
+  width: 90%;
+  margin: 7rem auto 0;
+  text-align: center;
+}
+
+.check-img-container {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+}
+
+.check-img-container > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.completed-state > h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.completed-state > p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.error-message {
+  color: var(--color-error-message);
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 21.875em) {
+  .card {
+    width: 18.125rem;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .cards {
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  .cards {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
+  .card2 > .text > p,
+  .card1 > span {
+    font-size: 1.25rem;
+  }
+
+  .card1 > span {
+    top: 42%;
+  }
+}
+
+@media screen and (min-width: 47.9375em) {
+  .card-container {
+    display: flex;
+    height: 100vh;
+    gap: 1rem;
+  }
+
+  .card-box {
+    height: 100%;
+    width: 50%;
+  }
+
+  .bg-container {
+    width: 70%;
+  }
+
+  .cards {
+    padding: 0;
+    height: 26rem;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card {
+    width: 20rem;
+    height: 13.125rem;
+  }
+
+  .card1 {
+    top: 60%;
+  }
+
+  .card2 {
+    position: absolute;
+    top: 0;
+    margin-right: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 20rem;
+  }
+
+  .completed-state {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .cards {
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 60.5625em) {
+  .card-box {
+    width: 40%;
+  }
+
+  .cards {
+    left: 4rem;
+  }
+
+  form,
+  .completed-state {
+    width: 24rem;
+  }
+}
+
+@media screen and (min-width: 65.625em) {
+  .card {
+    width: 23rem;
+  }
+
+  .card2 > .text > p,
+  .card1 > span {
+    font-size: 1.5625rem;
+  }
+
+  .card1 > span {
+    top: 41%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .cards {
+    left: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 81em) {
+  .cards {
+    left: 8rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .card-container {
+    max-width: 90rem;
+  }
+}
